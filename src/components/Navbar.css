@@ -1,0 +1,148 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 40px;
+    background: rgba(30, 86, 49, 0.75);
+    /* Semi-transparent green */
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* Glassmorphism effect */
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    padding: 15px 40px;
+    /* Reduce padding when scrolled */
+    background: rgba(30, 86, 49, 0.95);
+    /* Darker green */
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    /* Adjust size for consistency */
+    object-fit: contain;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+    /* Better spacing */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Underline Hover Effect */
+.navbar .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #D4AF37;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar .nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar .nav-links a:hover {
+    color: #D4AF37;
+}
+
+/* Shopping Cart Icon */
+.navbar .cart-icon {
+    position: relative;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar .cart-icon:hover {
+    transform: scale(1.1);
+    color: #D4AF37;
+}
+
+/* Cart Badge */
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #FFD700;
+    color: #1E5631;
+    font-size: 12px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 40px;
+    background: rgba(30, 86, 49, 0.75);
+    backdrop-filter: blur(10px);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Adjusted Logo Position */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    /* Push links to the right */
+}
+
+.navbar-logo {
+    max-width: 100px;
+    /* Adjust the size as needed */
+    height: auto;
+    display: block;
+}

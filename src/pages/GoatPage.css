@@ -1,0 +1,16 @@
+/* src/pages/GoatPage.css */
+.goat-page {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.goat-page h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.goat-page p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}

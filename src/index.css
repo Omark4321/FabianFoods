@@ -1,0 +1,21 @@
+/* src/index.css */
+
+/* Reset or global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Utility class for a generic container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

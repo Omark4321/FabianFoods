@@ -1,0 +1,16 @@
+/* src/pages/ChickenPage.css */
+.chicken-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.chicken-page h1 {
+    font-size: 2.5rem;
+    color: #e74c3c;
+}
+
+.chicken-page p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}

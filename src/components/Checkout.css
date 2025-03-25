@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.checkout-hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkout-hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.checkout-hero p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Delivery Information */
+.delivery-info {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.delivery-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.delivery-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.delivery-info li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.delivery-info h4 {
+    font-size: 1.3rem;
+    color: #1E5631;
+    font-weight: bold;
+}
+
+.delivery-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Checkout Form */
+.checkout-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1E5631;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #1E5631;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.submit-btn:hover {
+    background-color: #145237;
+}
+
+/* Conditional Address Input */
+.address-input {
+    display: none;
+}
+
+.address-input.active {
+    display: block;
+}
+
+/* Order Summary Section */
+.order-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid #D4AF37;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cart-items {
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.cart-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1E5631;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.total strong {
+    font-size: 1.4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .checkout-hero h1 {
+        font-size: 2rem;
+    }
+
+    .checkout-hero p {
+        font-size: 1rem;
+    }
+
+    .checkout-form .form-group input {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .order-summary h2 {
+        font-size: 1.2rem;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}

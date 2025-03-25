@@ -1,0 +1,195 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for Content */
+.about-container {
+    padding-top: 80px;
+    /* Adjust padding for spacing from the top */
+}
+
+/* Hero Section */
+.about-hero {
+    background-image: url('../../src/assests/about.jpg');
+    /* Adjust the path based on your folder structure */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+}
+
+/* Centered Content inside Hero */
+.about-hero-content {
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.about-hero p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* About Content Section */
+.about-details {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* About Item (Box for each section) */
+.about-details .about-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-left: 5px solid #d4af37;
+    /* Gold border on the left */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for About Item */
+.about-details .about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles inside the boxes */
+.about-details h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4caf50;
+    /* Green color for titles */
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Paragraphs inside the boxes */
+.about-details p {
+    font-size: 1.125rem;
+    color: #666;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+/* Footer Section */
+.about-footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 5px solid #d4af37;
+    /* Gold border at the top of the footer */
+}
+
+.about-footer p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Medium Screens (Tablets, Smaller Laptops) */
+@media (max-width: 1024px) {
+    .about-hero {
+        height: 60vh;
+        /* Reduce height on medium screens */
+    }
+
+    .about-details h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-details .about-item {
+        padding: 20px;
+    }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+    .about-hero {
+        height: 50vh;
+        /* Further reduce height on very small screens */
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+        /* Adjust heading size */
+    }
+
+    .about-hero p {
+        font-size: 1.2rem;
+        /* Adjust paragraph size */
+    }
+
+    .about-details h2 {
+        font-size: 1.8rem;
+        /* Adjust title size */
+    }
+
+    .about-details .about-item {
+        padding: 18px;
+    }
+
+    .about-footer p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Very Small Screens (Extra Small Mobile Phones) */
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2rem;
+        /* Adjust heading size further */
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+        /* Adjust paragraph size */
+    }
+
+    .about-details h2 {
+        font-size: 1.5rem;
+        /* Adjust title size */
+    }
+
+    .about-details p {
+        font-size: 1rem;
+        /* Adjust paragraph size */
+    }
+
+    .about-footer p {
+        font-size: 1rem;
+        /* Adjust footer text size */
+    }
+}

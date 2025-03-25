@@ -1,0 +1,102 @@
+/* PartSelection.css */
+.part-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #1e5631;
+    /* Dark Green */
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #d4af37;
+    /* Gold */
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+ul li {
+    margin: 10px 0;
+    width: 250px;
+    /* Fixed width for each item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+ul li span {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.part-selection-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 2rem;
+}
+
+/* Button for adding to cart */
+.action-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #d4af37;
+    /* Gold */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #b8860b;
+    /* Darker Gold */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .part-selection-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    ul li {
+        width: 200px;
+        /* Smaller width on mobile */
+    }
+}

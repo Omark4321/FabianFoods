@@ -1,0 +1,112 @@
+/* Global Reset for Body */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Main Wrapper to push footer down */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure the page takes full height */
+}
+
+/* Content Section (Main content area) */
+.content-container {
+    flex-grow: 1;
+    /* Allow content to grow and push footer down */
+}
+
+/* Footer Styling */
+.footer {
+    background: #1E5631;
+    /* Dark Green */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid #D4AF37;
+    /* Gold Accent */
+    margin-top: auto;
+    /* Ensure footer is pushed to the bottom */
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #D4AF37;
+    /* Gold */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #B8860B;
+    /* Darker Gold */
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    color: #D4AF37;
+    transform: scale(1.2);
+}
+
+/* Copyright */
+.footer p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-media a {
+        font-size: 1.5rem;
+    }
+}
